@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS 링크 단축키
+    1. link:css 입력
+    2. 기본으로 설정되어있는 href는 style.css이기 때문에, 폴더는 별도로 설정한다.
+    Ex.) css폴더안에 style.css가 있는 경우 -> href="css/style.csss"     
+    -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remind</title>
-    <!-- 
+    <title>Welcome to Remind</title>
+    <!-- HTML 단축키 
     1. 느낌표(!)를 사용하면, HTML5의 기본 양식(?)을 불러온다.
     2. 주석 처리 단축키는 Ctrl+/ 이다.
     -->
@@ -25,6 +31,18 @@
             <i class="fas fa-bolt"></i>
         </div>
     </div>
+
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to Remind</h1>
+            <p class="welcome-header__text">Remind Web Dev, loh in with your email or phone number</p>
+        </header>
+
+        <form class="login-form">
+            <input type="text" placeholder="Emaill ofr Phone Number">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Log in">
+            <a href="#">Find Remind Account or Password</a>
+        </form>
     <script src="https://kit.fontawesome.com/6478f529f2.js"
         crossorigin="anonymous">
     </script>

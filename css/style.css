@@ -1,0 +1,18 @@
+/* HTML의 Tag, Class, ID를 지정하는 경우,
+1. Tag는 그냥 해당 태그명을 입력
+2. Class는 앞에 dot(.)을 추가
+3. ID는 앞에 Pound key(#)을 추가
+*/
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-bar__column:first-child span{
+    margin-left: 20px;
+}
+/* display: flex; 는 태그안에 있는 내용들을 
+한줄(가로)로 만들어 준다. 물론, 그것이 주 기능은 아님!
+*/
+
