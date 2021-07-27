@@ -1,6 +1,7 @@
 .status-bar {
     display: flex;
     justify-content: center;
+    padding: 5px 3px;
     }
     
     .status-bar__column {
@@ -21,7 +22,7 @@
     .status-bar__column:first-child span{
         margin-right: 5px;
     }
-    
+
     .status-bar__column .fa-battery-three-quarters {
         margin: 0px 5px;
     }
@@ -55,3 +56,5 @@
     기본적으로 주축인, main axis는 가로축(수평), 교차축은 cross axis 세로축(수직)
     flex-direction:column 같은 속성으로 주축과 교차축을 바꿀 수 있다.
     */
+
+

@@ -5,8 +5,61 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import "reset.css";
+@import "variables.css";
 @import "status-bar.css";
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+/* 텍스트같은 경우를 중앙으로 하고싶을때는
+플렉스 박스보다는 컨텐츠인 텍스트를 중앙으로
+모으자*/
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.8;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+.login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.login-form input::placeholder {
+    opacity: 0.6;
+}
+
+/* 위에 플레이스 홀더는 
+.login-form ::placeholde 이렇게만 해도
+잘 적용이 되던데, 앞에 input를 넣어야 할까?
+*/
+
+.login-form input:focus {
+    border-color: var(--yellow);
+}
+
+
